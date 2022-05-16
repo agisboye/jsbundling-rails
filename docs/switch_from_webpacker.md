@@ -79,7 +79,7 @@ Webpacker includes [many dependencies](https://github.com/rails/webpacker/blob/5
 
 ```sh
 # From the CLI, remove Webpacker packages
-yarn remove @rails/webpacker webpack-dev-server
+npm uninstall @rails/webpacker webpack-dev-server
 ```
 
 ### Optional: Babel
@@ -90,7 +90,7 @@ yarn remove @rails/webpacker webpack-dev-server
 
 ```sh
 # From the CLI, add babel presets
-yarn add @babel/core @babel/preset-env babel-loader
+npm install @babel/core @babel/preset-env babel-loader
 ```
 
 2. Configure Babel
@@ -127,7 +127,7 @@ You can use Babel to transpile front-end frameworks and TypeScript. This example
 
 ```sh
 # From the CLI, add babel presets
-yarn add @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript
+npm install @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript
 ```
 
 2. Configure Babel
@@ -168,7 +168,7 @@ With the right loaders, webpack can handle CSS files. This setup _only_ uses jsb
 
 ```sh
 # From the CLI, add loaders, plugins, and node sass
-yarn add css-loader sass sass-loader mini-css-extract-plugin webpack-remove-empty-scripts
+npm install css-loader sass sass-loader mini-css-extract-plugin webpack-remove-empty-scripts
 ```
 
 2. Configure webpack
@@ -219,7 +219,7 @@ With the right loaders, webpack can handle other files. This setup may vary on y
 1. Install packages
 
 ```sh
-yarn add file-loader
+npm install file-loader
 ```
 
 2. Configure webpack
@@ -243,7 +243,7 @@ module.exports = {
 Confirm you have a working webpack configuration. You can rebuild the bundle with:
 
 ```sh
-yarn build --progress --color
+npm run build --progress --color
 ```
 
 If you have multiple entries, it's recommended to confirm one at a time, and finally the entire bundle.
